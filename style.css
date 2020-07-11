@@ -1,16 +1,11 @@
-*:focus {
-    outline: none;}
+
 *{
 	margin: 0 auto;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.stopwatch{
-    text-align: center;
-    margin: auto;
-    display: inline-block;
-}
+
 ::-moz-selection{
 	color: #FFFFFF;
 	background: #FF5722;
@@ -18,7 +13,7 @@
 
 ::selection{
 	color: #FFFFFF;
-	background: rgb(137, 34, 255);
+	background: #FF5722;
 }
 
 body{
@@ -29,14 +24,13 @@ body{
 }
 
 div.wrapper{
-    
-	width: 100%;
+	width: calc(4*225px);
 	margin: 0 auto;
 }
 
 span, a, strong{font-weight: 700;}
 a{transition: .2s; text-decoration: none; color: #787878; border-bottom: 1px solid #607D8B;}
-a:hover{transition: .2s; color: rgb(93, 34, 255);}
+a:hover{transition: .2s; color: #FF5722;}
 
 /* page layout */
 
@@ -45,8 +39,7 @@ a:hover{transition: .2s; color: rgb(93, 34, 255);}
 header{
 	width: 100%;
 	height: 50%;
-	background: rgb(68,13,106);
-background: linear-gradient(90deg, rgba(68,13,106,1) 46%, rgba(121,30,232,1) 64%, rgba(235,69,252,1) 100%);
+	background: #607D8B;
 }
 
 /* section */
@@ -89,7 +82,7 @@ p.strings{
 	width: 100%;
 	height: auto;
 	padding: 30px 0;
-	background: rgb(2, 1, 26);
+	background: #FF5722;
 	color: #FFFFFF;
 }
 
@@ -105,46 +98,13 @@ div.cd-box{
 	box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
 }
 
-.button_ {
-    background:linear-gradient(to left, rgb(132, 0, 240) 20%, #776ada 100%);
-    border-radius:70px;
-      border:1px solid white;
-      
-      cursor:pointer;
-      color:white;
-  
-      font-size:18px;
-    padding:4px 70px;  
-    height: 30px;
-    
-    min-height: 40px;
-    max-height: 70px;
-    min-width: 10px;
-    max-width: 300px;
-    margin-top: 25px;
-  }
-  .button_:hover {
-    background:white;
-      border-radius:90px;
-      border:1px solid #0e0bee;
-    cursor:pointer;
-    color:#131316;
-      font-size:18px;
-    padding:4px 70px;  
-    height: 40px;
-    max-height: 70;
-    min-width: 150px;
-    max-width: 300px;;
-    margin-top: 25;
-    box-shadow: 0px 3px 4px grey
-  }
-
 /* footer */
 
 footer{
 	position: relative;
-    top: 60px;
-    clear:left;
-
+	top: 60px;
 }
 
+footer p{
+  color: #787878;
+}
